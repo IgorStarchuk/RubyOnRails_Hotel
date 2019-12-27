@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bedroms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Floors</th>
+      <th>Floors houses</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bedroms.each do |bedrom| %>
+      <tr>
+        <td><%= bedrom.Name %></td>
+        <td><%= bedrom.floors %></td>
+        <td><%= bedrom.floors_houses %></td>
+        <td><%= link_to 'Show', bedrom %></td>
+        <td><%= link_to 'Edit', edit_bedrom_path(bedrom) %></td>
+        <td><%= link_to 'Destroy', bedrom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bedrom', new_bedrom_path %>

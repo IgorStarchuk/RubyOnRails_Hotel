@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Occupants Has Bedrooms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Occupants</th>
+      <th>Bedrooms</th>
+      <th>Bedrooms floors</th>
+      <th>Bedrooms floors houses</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @occupants_has_bedrooms.each do |occupants_has_bedroom| %>
+      <tr>
+        <td><%= occupants_has_bedroom.occupants %></td>
+        <td><%= occupants_has_bedroom.bedrooms %></td>
+        <td><%= occupants_has_bedroom.bedrooms_floors %></td>
+        <td><%= occupants_has_bedroom.bedrooms_floors_houses %></td>
+        <td><%= link_to 'Show', occupants_has_bedroom %></td>
+        <td><%= link_to 'Edit', edit_occupants_has_bedroom_path(occupants_has_bedroom) %></td>
+        <td><%= link_to 'Destroy', occupants_has_bedroom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Occupants has bedroom', new_occupants_has_bedroom_path %>

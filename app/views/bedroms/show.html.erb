@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bedrom.Name %>
+</p>
+
+<p>
+  <strong>Floors:</strong>
+  <%= @bedrom.floors %>
+</p>
+
+<p>
+  <strong>Floors houses:</strong>
+  <%= @bedrom.floors_houses %>
+</p>
+
+<%= link_to 'Edit', edit_bedrom_path(@bedrom) %> |
+<%= link_to 'Back', bedroms_path %>

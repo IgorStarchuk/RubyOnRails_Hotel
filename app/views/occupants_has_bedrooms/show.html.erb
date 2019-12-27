@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Occupants:</strong>
+  <%= @occupants_has_bedroom.occupants %>
+</p>
+
+<p>
+  <strong>Bedrooms:</strong>
+  <%= @occupants_has_bedroom.bedrooms %>
+</p>
+
+<p>
+  <strong>Bedrooms floors:</strong>
+  <%= @occupants_has_bedroom.bedrooms_floors %>
+</p>
+
+<p>
+  <strong>Bedrooms floors houses:</strong>
+  <%= @occupants_has_bedroom.bedrooms_floors_houses %>
+</p>
+
+<%= link_to 'Edit', edit_occupants_has_bedroom_path(@occupants_has_bedroom) %> |
+<%= link_to 'Back', occupants_has_bedrooms_path %>

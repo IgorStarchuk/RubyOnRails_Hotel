@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  occupants_id: 
+  bedrooms_id: 
+  bedrooms_floors_id: 
+  bedrooms_floors_houses_id: 
+
+two:
+  occupants_id: 
+  bedrooms_id: 
+  bedrooms_floors_id: 
+  bedrooms_floors_houses_id: 
